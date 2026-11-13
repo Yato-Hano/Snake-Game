@@ -27,7 +27,7 @@ bool Move_Handler::operator()(sf::RenderWindow& window)
     sf::Angle angle = (to - from).angle();
     float seconds = m_clock.restart().asSeconds();
 
-   return m_snake.move_on_angle(seconds, angle);
+    return m_snake.move_on_angle(seconds, angle);
 }
 //--------------------------------------------
 Apple::Apple(const std::string& texture_name)
