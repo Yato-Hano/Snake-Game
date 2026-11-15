@@ -35,7 +35,7 @@ public:
 
 private:
     float m_radius{ 16 };
-    sf::Vector2f m_origin{ m_radius /2.f,m_radius /2.f};
+    sf::Vector2f m_origin{ m_radius ,m_radius };
     float m_speed{ 100 };
     std::list<sf::CircleShape> m_body;
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override
